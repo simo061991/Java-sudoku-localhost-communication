@@ -6,8 +6,8 @@
 package zavrsnizadatak;
 
 /**
- * Class Player sluûi za informacije o igraËu.
- * @author äimo
+ * Class Player slu≈æi za informacije o igra√®u.
+ * @author ≈†imo
  * 
  */
  class Player {
@@ -15,7 +15,7 @@ package zavrsnizadatak;
     private String ID;
     private String ime;
     /**
-     * Metoda setID sluûi za postavljanje vrijednost ID-a.
+     * Metoda setID slu≈æi za postavljanje vrijednost ID-a.
      * @param ID 
      */
     public void setID(String ID) {
@@ -23,21 +23,21 @@ package zavrsnizadatak;
     }
     
     /**
-     * Metoda setIme sluûi za postavljenje vrijednost ime.
+     * Metoda setIme slu≈æi za postavljenje vrijednost ime.
      * @param ime 
      */
     public void setIme(String ime) {
         this.ime = ime;
     }
     /**
-     * Metoda getID vraÊa ID vrijednost
+     * Metoda getID vra√¶a ID vrijednost
      * @return ID
      */
     public String getID() {
         return ID;
     }
     /**
-     * Metoda getIme sluûi za vraÊanje vrijednosti ime.
+     * Metoda getIme slu≈æi za vra√¶anje vrijednosti ime.
      * @return ime
      */
     public String getIme() {
