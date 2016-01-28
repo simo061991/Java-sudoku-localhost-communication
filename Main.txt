@@ -13,9 +13,9 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
- * Class Main se bavi izgledom i informacijama dobivenim od igraËa te prikazom programa.
+ * Class Main se bavi izgledom i informacijama dobivenim od igra√®a te prikazom programa.
  * 
- * @author äimo
+ * @author ≈†imo
  */
 public class Main {
     
@@ -38,13 +38,13 @@ public class Main {
                 break;
             }
             host.newGame();
-            System.out.println("Unesi rijeöenje za prvi red");
+            System.out.println("Unesi rije≈°enje za prvi red");
             String rijesenje1 = sc.next();
-            System.out.println("Unesite rijeöenje za drugi red");
+            System.out.println("Unesite rije≈°enje za drugi red");
             String rijesenje2 = sc.next();
-            System.out.println("Unesite rijeöenje za treci red");
+            System.out.println("Unesite rije≈°enje za treci red");
             String rijesenje3 = sc.next();
-            System.out.println("Unesite rijeöenje za cetvrti red");
+            System.out.println("Unesite rije≈°enje za cetvrti red");
             String rijesenje4 = sc.next();
             host.rijesenje = rijesenje1.trim()+rijesenje2.trim()+rijesenje3.trim()+rijesenje4.trim();
             host.chechMet(host.rijesenje);
