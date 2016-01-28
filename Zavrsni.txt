@@ -24,7 +24,7 @@ import java.util.Scanner;
 
 /**
  * Klasa ServerCom komunicira sa Serverom.
- * @author äimo
+ * @author ≈†imo
  */
 public class ServerCom extends Player {
     
@@ -43,7 +43,7 @@ public class ServerCom extends Player {
     
     /**
      * Metoda postavlja i spaja osnovnu konekciju sa "localhost" serverom.
-     * @throws MalformedURLException Baca iznimku ukoliko nije doöao ispravan URL ili ga je nemoguÊe parsati.
+     * @throws MalformedURLException Baca iznimku ukoliko nije do≈°ao ispravan URL ili ga je nemogu√¶e parsati.
      * @throws IOException Ukoliko se javlja IOException
      */
     public void openCon() throws MalformedURLException{
@@ -51,7 +51,7 @@ public class ServerCom extends Player {
             URL url = new URL("http://localhost/");
             URLConnection conn = url.openConnection();
             conn.connect();
-            System.out.println("Uspjeöno ste spojeni na server");
+            System.out.println("Uspje≈°no ste spojeni na server");
         } catch (MalformedURLException ex) {
             ex.printStackTrace();
         
@@ -61,9 +61,9 @@ public class ServerCom extends Player {
     }
     
     /**
-     * Metoda se spaja na localhost sa http adresom koja u sebi sadrûi komande
-     * i ime igraËa koji se ûeli spojiti.
-     * @throws MalformedURLException Baca iznimku ukoliko nije doöao ispravan URL ili ga je nemoguÊe parsati.
+     * Metoda se spaja na localhost sa http adresom koja u sebi sadr≈æi komande
+     * i ime igra√®a koji se ≈æeli spojiti.
+     * @throws MalformedURLException Baca iznimku ukoliko nije do≈°ao ispravan URL ili ga je nemogu√¶e parsati.
      * @throws IOException Ukoliko se javlja IOException
      */  
     public void regPlay(){
@@ -76,7 +76,7 @@ public class ServerCom extends Player {
             while (inn.hasNextLine()) {
                 line = inn.nextLine();
                 BufferedReader ina = new BufferedReader(new InputStreamReader(
-                conn.getInputStream()));//Ëita sa url.
+                conn.getInputStream()));//√®ita sa url.
                 //Dobivanje ID-a iz String line metodom "lastIndexOf".
                 String ID = line.substring(line.lastIndexOf(",") + 1); 
                 play.setID(ID);
@@ -95,10 +95,10 @@ public class ServerCom extends Player {
     }
     
     /**
-     * Metoda se spaja na localhost sa http adresom koja u sebi sadrûi komandu new
-     * i ID igraËa koji se ûeli spojiti.
-     * Pokretanjem programa ova metoda Êe dodijeliti novu igru igraËem sa postavljenim ID-om.
-     * @throws MalformedURLException Baca iznimku ukoliko nije doöao ispravan URL ili ga je nemoguÊe parsati.
+     * Metoda se spaja na localhost sa http adresom koja u sebi sadr≈æi komandu new
+     * i ID igra√®a koji se ≈æeli spojiti.
+     * Pokretanjem programa ova metoda √¶e dodijeliti novu igru igra√®em sa postavljenim ID-om.
+     * @throws MalformedURLException Baca iznimku ukoliko nije do≈°ao ispravan URL ili ga je nemogu√¶e parsati.
      * @throws IOException Ukoliko se javlja IOException
      */
     public void newGame() throws MalformedURLException, IOException{
@@ -112,7 +112,7 @@ public class ServerCom extends Player {
             String SerIn = "";
             String SerBr = "";
             ArrayList<String> listaIspisa = new ArrayList<String>();
-            // Spremanje odreenih dijelova iz String lineNewGame u posebne varijable radi laköeg handlanja.
+            // Spremanje odre√∞enih dijelova iz String lineNewGame u posebne varijable radi lak≈°eg handlanja.
             if(lineNewGame.length() < 5){
                 System.out.println();
             }
@@ -140,11 +140,11 @@ public class ServerCom extends Player {
     }
     
     /**
-     * Metoda se spaja na localhost sa http adresom koja u sebi sadrûi komandu check,
-     * ID igraËa koji se ûeli spojiti i rijeöenje koje je korisnik unio
-     * Pokretanjem programa ova metoda Êe provjeriti toËnost rijeöenja.
+     * Metoda se spaja na localhost sa http adresom koja u sebi sadr≈æi komandu check,
+     * ID igra√®a koji se ≈æeli spojiti i rije≈°enje koje je korisnik unio
+     * Pokretanjem programa ova metoda √¶e provjeriti to√®nost rije≈°enja.
      * @param rijesenje Parametar metode checkMet
-     * @throws MalformedURLException Baca iznimku ukoliko nije doöao ispravan URL ili ga je nemoguÊe parsati.
+     * @throws MalformedURLException Baca iznimku ukoliko nije do≈°ao ispravan URL ili ga je nemogu√¶e parsati.
      * @throws IOException Ukoliko se javlja IOException
      */
     public void chechMet(String rijesenje) throws MalformedURLException, IOException{ 
@@ -166,11 +166,11 @@ public class ServerCom extends Player {
     }
     
     /**
-     * Metoda se spaja na localhost sa http adresom koja u sebi sadrûi komandu unregister i
-     * ID igraËa.
-     * Pokretanjem programa ova metoda Êe deregistrirati igraËa.
-     * @return VraÊa String varijablu u kojoj je spremljena informacija od servera.
-     * @throws MalformedURLException Baca iznimku ukoliko nije doöao ispravan URL ili ga je nemoguÊe parsati.
+     * Metoda se spaja na localhost sa http adresom koja u sebi sadr≈æi komandu unregister i
+     * ID igra√®a.
+     * Pokretanjem programa ova metoda √¶e deregistrirati igra√®a.
+     * @return Vra√¶a String varijablu u kojoj je spremljena informacija od servera.
+     * @throws MalformedURLException Baca iznimku ukoliko nije do≈°ao ispravan URL ili ga je nemogu√¶e parsati.
      * @throws IOException Ukoliko se javlja IOException
      */
     public String Unreg() throws MalformedURLException, IOException{
