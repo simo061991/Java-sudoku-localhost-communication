@@ -148,7 +148,12 @@ public class ServerCom extends Player {
      * @throws IOException Ukoliko se javlja IOException
      */
     public void chechMet(String rijesenje) throws MalformedURLException, IOException{ 
-        Long p = Long.parseLong(rijesenje);
+        Long p = null;	
+    	try{
+         p = Long.parseLong(rijesenje);
+    	}catch(Exception e){
+    		
+        }
         URL urlla = new URL("http://localhost/?command=check&solution="+p+"&"+play.getID().trim());
         URLConnection connnm = urlla.openConnection();
         connnm.connect();
